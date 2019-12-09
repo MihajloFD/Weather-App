@@ -1,0 +1,114 @@
+@import '../../less/variables.less';
+.weatherContainer{
+    display: flex;
+    height: 100%;
+    color: @textColor;
+    .detail{
+        background: @detailBackground;
+        width: 100%;
+        height: 100vh;
+        .detailInfo{
+            display: flex;
+            font-size: 16px;
+            .item{
+                margin: 20px auto; 
+                margin-left: 0;
+            }
+        }
+    }
+    .rainy{
+        background: @rainyBackground;
+        width: 100%;
+        height: 100vh;
+    }
+    .sunny{
+        width: 100%;
+        height: 100vh;
+        background-color: @sunnyBackground;
+    }
+        .switchHolder{
+            float: right;
+            margin: 10px;
+        }
+        .weatherInfo{
+            margin-top: 90px;
+            margin-left: 30px;
+            .searchHolder{
+                .city{
+                    background: inherit;
+                    border: 0;
+                    height: 20px;
+                    width: 100px;
+                    color: inherit;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 21px;
+                    text-transform: uppercase;
+                    background-image: url(./img/icons8-material-filled-50.png);
+                    background-repeat: no-repeat;
+                    background-size: 20px;
+                    background-position: right;
+                    padding-right: 20px;
+                    &:focus{
+                        background-image: none;
+                        padding-right: 0px;
+                    }
+                }
+            }
+            .temp{
+                font-size: 96px;
+                display: flex;
+                .tempInfo{
+                    font-size: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    font-weight: bold;
+                }
+            }
+            .discription{
+                font-size: 25px;
+                font-weight: bold;
+                margin-top: -15px;
+            }
+            .moreDetails{
+                font-size: 12px;
+                color: inherit;
+                cursor: pointer;
+                padding-left: 0;
+                background: inherit;
+                border: 0;
+            }
+        }
+        .imgHolder{
+            width: 100%;
+        }
+    }
+    .forecastHolder{
+        margin-left: 30px;
+    }
+        .forecast{
+            display: flex;
+            margin-top: 20px;
+            .item{
+                text-align: center;
+            }
+            .windSpeed{
+                font-size: 10px;
+            }
+            .temp{
+                font-size: 14px;
+                height: 50px;
+            }
+            .time{
+                border-top: 1px solid white ;
+                font-size: 10px;
+            }     
+            .dot {
+                height: 5px;
+                width: 5px;
+                background-color: white;
+                border-radius: 50%;
+                display: inline-block;
+              }
+        }

@@ -1,0 +1,4 @@
+
+export const WEATHER_BY_CITY = 'WEATHER_BY_CITY';
+export const WEATHER_FORECAST = 'WEATHER_FORECAST';
+export const ERROR_MESSAGE = 'ERROR_MESSAGE';
